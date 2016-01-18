@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <title>I.UA&#179; — твоя почта</title>
 
-<meta charset="windows-1251s" />
+<meta charset="windows-1251" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="description" content="I.UA — популярный украинский портал"/>
 
