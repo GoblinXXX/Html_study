@@ -303,7 +303,7 @@
             </ul>
             <link href="C:\Users\a.kovalenko\Desktop\wether_i_ua/wether.css" rel="stylesheet" type="text/css"
                   media="screen">
-   <style type="text/css">
+<style type="text/css">
     .day_wether{
         width: 20%;
         border-left: 1px solid #DDD;
