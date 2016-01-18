@@ -774,6 +774,4 @@
             vertical-align: middle;
         }
     }
-
-
-            </style>
+</style>
