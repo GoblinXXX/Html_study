@@ -237,11 +237,12 @@ h2, .celsius, .verticalmiddle{
 }
 .weather_cell{
   display: inline-block;
-  width: 12.7%;
+  width: 12.5%;
   border-left: 1px solid #DDD;
   padding: 0;
   padding-bottom: 8px;
   border-bottom: 1px solid #DDD;
+  margin-left: -5.3px;
 }
 .weather_cell:first-child{
   margin-left: 0;
@@ -326,7 +327,7 @@ h2, .celsius, .verticalmiddle{
   display:block;
 }
 
-@media screen and (max-width: 800px) {                                      <!--  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+@media screen and (max-width: 800px) {
   .city_link {
     border-width: 0;
     text-decoration: underline;
@@ -441,6 +442,15 @@ h2, .celsius, .verticalmiddle{
     width: 100%;
     background: none;
   }
+  .weather_cell{
+    display: inline-block;
+    width: 25%;
+    border-left: 1px solid #DDD;
+    padding: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #DDD;
+    margin-left: -6px;
+    }
   .weather_cell:nth-child(1), .weather_cell:nth-child(3){
     background-color: #f9f8f0;
   }
