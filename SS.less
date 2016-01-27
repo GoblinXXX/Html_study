@@ -1,0 +1,451 @@
+.day_weather{
+  width: 20%;
+  border-left: 1px solid #DDD;
+  display: table-cell;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+}
+.day_weather_description_day, .day_weather_description_night{
+  background-color: #F0F0F0;
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 4px 0;
+  font-size: 0.84em;
+  text-align: center;
+}
+.day_weather .celsius_spec{
+  display: block;
+  text-align:center;
+}
+.day_weather_description{
+  background: #E1ECFA;
+  border-bottom: 1px solid #C4D2E7;
+  font-weight: normal;
+  padding-top: 8px;
+  text-align: center;
+  padding-bottom: 8px;
+  vertical-align: top;
+
+}
+.weather_left, .weather_right{
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 8px 0;
+  background: #E1ECFA;
+}
+.weather_right{
+  margin-left: -4px;
+  }
+.list_cols_map{
+  display: inline-block;
+  width: 24.6%;
+  text-align: left;
+  vertical-align: top;
+}
+.city_link{
+  border-width: 0;
+  text-decoration: underline;
+  font-size: 0.94em;
+}
+h1{
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 88%;
+}
+.wind, .moisture, .presure, .sunup, .sundown{
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+
+}
+h2{
+  font-size: 16px;
+  font-weight: normal;
+
+}
+h3, h4{
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #DDD;
+}
+//h2>a{
+//  color: black;
+//  border-color: rgba(0,0,0,0.3);
+//  border-style: solid;
+//  cursor: pointer;
+//  font-size: 18px;
+//  font-weight: normal;
+//  border-width: 0 0 1px 0;
+//  text-decoration: none;
+//}
+
+.link_container{
+  width: 100%;
+  margin-bottom: 16px;
+
+}
+
+.city_link:hover, .city_link:active{
+  text-decoration: none;
+}
+.city_list li a:visited{
+  color: #1162b3;
+}
+.city_link{
+  margin: -13px 0 15px 12px;
+  display: block;
+  vertical-align: top;
+  width: 40%;
+  text-align: left;
+}
+
+.cityletter{
+  font-size: 0.65em;
+  font-family: Tahoma, Verdana, sans-serif;
+  color: #777777;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.city_list{
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+.city_list__colfirst, .city_list__colsecond, .city_list__colthird, .city_list__colfourth{
+  width: 22.4%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+img{
+  max-width: 100%;
+}
+.celsius_spec{
+  font-size: 0.84em;
+  word-wrap: break-word;
+  text-align: center;
+  overflow: auto;
+
+
+}
+.left{
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.maplink{
+  color: #1162b3;
+  width: auto;
+}
+.map_name{
+  display: inline-block;
+  margin: 0 4px 0 -20px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url("http://i3.i.ua/css/i2/blue/sprite/weather.y9a7f2460.png");
+  background-position: -372px 0;
+}
+.celsiustitle{
+  color: #1162b3;
+  font-size: 1.55em;
+  display: inline-block;
+  font-weight: bold;
+  }
+.page_content{
+  box-sizing: border-box;
+  padding: 20px;
+  vertical-align: top;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+.title{
+  font-weight: normal;
+  color: #000000;
+}
+
+.celsius, .celsiuslocal{
+  color: #1162b3;
+  margin-bottom: 4px;
+  font-size: 1.55em;
+  display: block;
+  font-weight: bold;
+}
+h2, .celsius, .verticalmiddle{
+  display:inline-block;
+  line-height: 1em;
+}
+.verticalmiddle{
+  width: 3em;
+  height: auto;
+  vertical-align: middle;
+}
+.list_justify{
+  color: #777777;
+  list-style: none;
+  padding:0;
+  margin:0;
+  margin-bottom: -20px;
+  text-align: justify;
+}
+.list_justify:after{
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+  }
+
+.weather_cell_container .weather_cell{
+  vertical-align: top;
+  text-align: center;
+}
+.local_div, .day_weather_group{
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.weather_left{
+  margin-left: 0;
+}
+.weather_cell_container{
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: 100%;
+
+}
+.weather_cell{
+  display: table-cell;
+  width: 12.5%;
+  border-left: 1px solid #DDD;
+  padding: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #DDD;
+}
+.weather_cell:nth-child(8){
+  border-right: 1px solid #DDD;
+
+}
+.weather_cell_morning, .weather_cell_day, .weather_cell_evening, .weather_cell_night{
+  margin-bottom: 4px;
+  padding: 4px 0;
+  font-size: 0.84em;
+  display: block;
+  background: #F0F0F0;
+}
+.celsius{
+  display: block;
+}
+.weather_pic{
+  text-align: center;
+}
+
+.day_weather .celsius_spec{
+  font-size: 0.84em;
+}
+.day_weather_group{
+  width: 100%;
+
+}
+.day_weather{
+  text-align: center;
+}
+.day_weather_container{
+  margin: 0;
+  padding: 0;
+  display:table;
+  width: 100%;
+}
+
+
+.day_weather:last-child{
+  border-right: 1px solid #DDD;
+}
+
+.day_weather_pic{
+  text-align: center;
+  max-width: 100%;
+  vertical-align: top;
+
+}
+
+.list-cols{
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.preview{
+  display: inline-block;
+  padding: 5px 11px 11px 5px;
+  background: url("http://i3.i.ua/v2/bg/preview_image_grey.y1.png") no-repeat 100% 100%;
+  border-width: 0;
+}
+.preview_link{
+  display: block;
+  color: #1162b3;
+  border-width: 0;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+.preview_link:hover, .preview_link:active{
+  text-decoration: none;
+}
+.preview_link:visited{
+  color: #1162b3;
+}
+.mobileborder{
+  display:block;
+}
+
+@media screen and (max-width: 800px) {
+  .city_link {
+    border-width: 0;
+    text-decoration: underline;
+    font-size: 0.8em;}
+  .day_weather_description_day, .day_weather_description_night {
+    font-size: 1.9em;
+    background: none;
+  }
+
+  .mobileborder{
+    width: 98%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    border-style: solid solid solid solid;
+    border-color: rgb(221,223,225) rgb(221,223,225) rgba(0,4,8,.35);
+    border-width: 1px 1px 1px;
+    padding: 5px;
+  }
+  .celsius, .celsiuslocal{
+    color: rgb(175,0,45);
+    font-size: 1.25em;
+  }
+  .list_cols_map {
+    width: 23.0%;
+    }
+  .preview_link{
+    font-size: 0.68em;}
+
+  li.weather_cell:nth-child(5){
+    display: none;
+  }
+  li.weather_cell:nth-child(6){
+    display: none;
+  }
+  li.weather_cell:nth-child(7){
+    display: none;
+  }
+  li.weather_cell:nth-child(8){
+    display: none;
+  }
+  li.weather_cell:nth-child(4){
+    border-right: 1px solid #DDD;
+  }
+
+  .weather_pic{
+    width: 40px;
+
+  }
+  .celsius_spec{
+    font-size: 0.68em;
+  }
+  .day_weather_description, .day_weather img{
+    display: table-cell;
+  }
+  .day_weather_pic{
+    text-align: center;
+  }
+  .celsius {
+    text-align: right;
+    padding-right: 5px;
+    color: rgb(175,0,45);
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  .day_weather .celsius_spec, .day_weather_description_day, .day_weather_description_night{
+    display:none;
+  }
+  .day_weather {
+    width: 100%;
+    border-left: none;
+    display: table-row;
+    text-align: center;
+    outline: 2px solid white;
+    background: rgb(245,247,249);
+  }
+  .day_weather_description {
+    background: none;
+    border-bottom: none;
+    font-weight: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .day_weather span:nth-child(8n){
+    display:none;
+  }
+  .day_weather_pic:nth-child(7n){
+    display:none;
+  }
+  .weather_right{
+    display: none;
+  }
+  .weather_left{
+    width: 100%;
+    background: none;
+  }
+  .weather_cell:nth-child(1), .weather_cell:nth-child(3){
+    background-color: #f9f8f0;
+  }
+  .weather_cell:nth-child(4){
+    background: #f0eee9;
+  }
+  .city_list__colfirst, .city_list__colsecond, .city_list__colthird, .city_list__colfourth{
+    margin-right: 35px;
+
+  }
+
+  .underlined, .celsius_spec, .maplink, h1, h2, h3, .city_list, .list_justify li:nth-child(4), .list_justify li:nth-child(5){
+    display: none;
+  }
+  .wind, .moisture, .presure, .sunup, .sundown{
+    display: list-item;
+  }
+  .title{
+    text-align: center;
+  }
+  .verticalmiddle{
+    width: 3em;
+    height: auto;
+    vertical-align: middle;
+  }
+}
