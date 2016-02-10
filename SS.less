@@ -1,3 +1,16 @@
+@numbercolor: #1162b3;
+@numbercolormedia: #af002d;
+@daybackground: #E1ECFA;
+@weatherdiv: #FFF;
+.wrapper, .page_content{
+  background: @weatherdiv;
+  }
+.celsiuslocal, .celsiustitle, .celsius {
+  color: @numbercolor;
+  }
+.weather_left, .weather_right, .day_weather_description{
+    background: @daybackground;
+  }
 .day_weather{
   width: 20%;
   border-left: 1px solid #DDD;
@@ -21,7 +34,6 @@
   text-align:center;
 }
 .day_weather_description{
-  background: #E1ECFA;
   border-bottom: 1px solid #C4D2E7;
   font-weight: normal;
   padding-top: 8px;
@@ -36,7 +48,7 @@
   text-align: center;
   vertical-align: top;
   padding: 8px 0;
-  background: #E1ECFA;
+
 }
 .list_cols_map{
   display: inline-block;
@@ -74,16 +86,6 @@ h3, h4{
   margin-bottom: 8px;
   border-bottom: 1px solid #DDD;
 }
-//h2>a{
-//  color: black;
-//  border-color: rgba(0,0,0,0.3);
-//  border-style: solid;
-//  cursor: pointer;
-//  font-size: 18px;
-//  font-weight: normal;
-//  border-width: 0 0 1px 0;
-//  text-decoration: none;
-//}
 
 .link_container{
   width: 100%;
@@ -164,7 +166,6 @@ img{
   background-position: -372px 0;
 }
 .celsiustitle{
-  color: #1162b3;
   font-size: 1.55em;
   display: inline-block;
   font-weight: bold;
@@ -173,7 +174,6 @@ img{
   box-sizing: border-box;
   padding: 20px;
   vertical-align: top;
-  background-color: #FFF;
   border: 1px solid #DDD;
   margin-bottom: 20px;
   width: 100%;
@@ -185,7 +185,7 @@ img{
 }
 
 .celsius, .celsiuslocal{
-  color: #1162b3;
+
   margin-bottom: 4px;
   font-size: 1.55em;
   display: block;
@@ -335,7 +335,8 @@ h2, .celsius, .verticalmiddle{
     background: none;
   }
   .celsiustitle {
-    color: #af002d;
+    color: @numbercolormedia;
+
     }
   .mobileborder{
     width: 100%;
@@ -349,7 +350,7 @@ h2, .celsius, .verticalmiddle{
     border-width: 1px 1px 1px;
   }
   .celsius, .celsiuslocal{
-    color: rgb(175,0,45);
+    color: @numbercolormedia;
     font-size: 1.25em;
   }
   .list_cols_map {
@@ -391,7 +392,6 @@ h2, .celsius, .verticalmiddle{
   .celsius {
     text-align: right;
     padding-right: 5px;
-    color: rgb(175,0,45);
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 0;
