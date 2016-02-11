@@ -2,21 +2,58 @@
 @numbercolormedia: #af002d;
 @daybackground: #E1ECFA;
 @weatherdiv: #FFF;
+@doc_font: serif;
+@grayborder: 1px solid #DDD;
+.dayname{
+  word-wrap: break-word;
+  height: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+  display: block;
+  }
+.firstday, .secondday, .thirdday, .fourthday, .fifthday{
+  .dayname;
+  }
+.cellparam{
+  width: 22.4%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  }
+.grayday{
+  margin-bottom: 4px;
+  padding: 4px 0;
+  font-size: 0.84em;
+  display: block;
+  background: #F0F0F0;
+  width: 100%;
+  height: 14px;
+  overflow: hidden;
+  word-wrap: break-word;
+  }
+.bluenumber{
+  margin-bottom: 4px;
+  font-size: 1.55em;
+  display: block;
+  font-weight: bold;
+  }
 .wrapper, .page_content{
   background: @weatherdiv;
+  font-family: @doc_font;
   }
 .celsiuslocal, .celsiustitle, .celsius {
   color: @numbercolor;
   }
 .weather_left, .weather_right, .day_weather_description{
     background: @daybackground;
+
   }
 .day_weather{
   width: 20%;
-  border-left: 1px solid #DDD;
+  border-left: @grayborder;
   display: inline-block;
   text-align: center;
-  border-bottom: 1px solid #DDD;
+  border-bottom: @grayborder;
   box-sizing: border-box;
 }
 
@@ -28,6 +65,9 @@
   padding: 4px 0;
   font-size: 0.84em;
   text-align: center;
+  word-wrap: break-word;
+  height: 14px;
+  overflow: hidden;
 }
 .day_weather .celsius_spec{
   display: block;
@@ -40,6 +80,7 @@
   text-align: center;
   padding-bottom: 8px;
   vertical-align: top;
+  height: 20px;
 
 }
 .weather_left, .weather_right{
@@ -84,7 +125,7 @@ h2{
 h3, h4{
   padding-bottom: 8px;
   margin-bottom: 8px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: @grayborder;
 }
 
 .link_container{
@@ -123,10 +164,7 @@ h3, h4{
   vertical-align: top;
 }
 .city_list__colfirst, .city_list__colsecond, .city_list__colthird, .city_list__colfourth{
-  width: 22.4%;
-  text-align: left;
-  display: inline-block;
-  vertical-align: top;
+  .cellparam;
 }
 img{
   max-width: 100%;
@@ -135,8 +173,10 @@ img{
   font-size: 0.84em;
   word-wrap: break-word;
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 8px;
+  height: 20px;
+  display: block;
 
 
 }
@@ -185,11 +225,7 @@ img{
 }
 
 .celsius, .celsiuslocal{
-
-  margin-bottom: 4px;
-  font-size: 1.55em;
-  display: block;
-  font-weight: bold;
+.bluenumber;
 }
 h2, .celsius, .verticalmiddle{
   display:inline-block;
@@ -248,11 +284,7 @@ h2, .celsius, .verticalmiddle{
 
 }
 .weather_cell_morning, .weather_cell_day, .weather_cell_evening, .weather_cell_night{
-  margin-bottom: 4px;
-  padding: 4px 0;
-  font-size: 0.84em;
-  display: block;
-  background: #F0F0F0;
+ .grayday;
 }
 .celsius{
   display: block;
@@ -286,7 +318,7 @@ h2, .celsius, .verticalmiddle{
 .day_weather_pic{
   text-align: center;
   max-width: 100%;
-  vertical-align: bottom;
+  vertical-align: middle;
 
 }
 
@@ -325,14 +357,21 @@ h2, .celsius, .verticalmiddle{
 .downrow, .uprow{
   padding-bottom: 8px;
   }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .firstday, .secondday, .thirdday, .fourthday, .fifthday{
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 0 10px;
+    display: block;
+    line-height: 1.5;
+    width: 135px;
+    }
   .city_link {
     border-width: 0;
     text-decoration: underline;
     font-size: 0.8em;}
   .day_weather_description_day, .day_weather_description_night {
-    font-size: 1.9em;
-    background: none;
+    .grayday;
   }
   .celsiustitle {
     color: @numbercolormedia;
