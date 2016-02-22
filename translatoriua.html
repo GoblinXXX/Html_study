@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-</html>
+<html>
 <head>
     <title>Переводчик онлайн с русского на английский язык. Онлайн переводчик </title>
     <meta charset="utf-8"/>
@@ -19,7 +19,7 @@
             больше?
         </a>)
     </span>
-    <button class="xbutton"и title="Очистить"><img src="http://i3.i.ua/v2/ico/editor/clear.png" alt="img"></button>
+    <button class="xbutton" title="Очистить"><img src="http://i3.i.ua/v2/ico/editor/clear.png" alt="img"></button>
     <textarea type="text" class="textfield" rows="8"></textarea>
 
     <div class="trans_buttons">
@@ -85,9 +85,9 @@
                 <option>сексуальная</option>
             </select>
         </div>
-        <h2>Популярные направления переводчика:</h2><a href="#" class="template_more">больше направлений</a>
+        <h2>Популярные направления переводчика:</h2><a href="javascript:onoff('div1');" class="template_more" id="template_link">больше направлений</a>
 
-        <div class="popular_trans">
+                <div class="popular_trans">
             <div class="lang_left">
                 <a class="lang_left__templateup" href="#" title="перевод с русского на английский">
                     <span class="template_gray">RU / EN</span>русско-английский
@@ -112,7 +112,7 @@
                     <span class="template_gray">EN / UA</span>ангийско-украинский
                 </a>
             </div>
-            <div class="trans_hidden">
+            <div class="trans_hidden" id="div1">
                 <div class="more_trans_one">
                     <div class="lang_left">
                         <a class="lang_left__templateup" href="#" title="перевод с русского на французкий">
@@ -188,7 +188,7 @@
         <div class="text_output">
             <div class="textfield_wrapper">
                 <h2>Переведенный текст</h2>
-                <textarea class="text_output_field" type="text" rows="8"></textarea>
+                <textarea class="text_output_field" rows="8"></textarea>
             </div>
                 <p class="translatordescr">Переводчик онлайн - это удобный, а также бесплатный сервис мгновенного перевода текста. Доступны
                     переводы с русского и украинского на английский, немецкий, французский, польский, латышский языки в
@@ -221,5 +221,14 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function onoff(t){
+        p=document.getElementById(t);
+        if(p.style.display=="none"){
+            p.style.display="block";}
+        else{
+            p.style.display="none";}
+    }
+</script>
 </body>
 </html>
