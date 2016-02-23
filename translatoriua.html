@@ -19,8 +19,8 @@
             больше?
         </a>)
     </span>
-    <button class="xbutton" title="Очистить"><img src="http://i3.i.ua/v2/ico/editor/clear.png" alt="img"></button>
-    <textarea type="text" class="textfield" rows="8"></textarea>
+    <button class="xbutton" title="Очистить" onclick="document.getElementById('textfield').value=''; document.getElementById('text_output_field').value=''; "><img src="http://i3.i.ua/v2/ico/editor/clear.png" alt="img"></button>
+    <textarea type="text" class="textfield" id="textfield" rows="8"></textarea>
 
     <div class="trans_buttons">
         <div class="left_buttons">
@@ -188,7 +188,7 @@
         <div class="text_output">
             <div class="textfield_wrapper">
                 <h2>Переведенный текст</h2>
-                <textarea class="text_output_field" rows="8"></textarea>
+                <textarea class="text_output_field" id="text_output_field" rows="8"></textarea>
             </div>
                 <p class="translatordescr">Переводчик онлайн - это удобный, а также бесплатный сервис мгновенного перевода текста. Доступны
                     переводы с русского и украинского на английский, немецкий, французский, польский, латышский языки в
