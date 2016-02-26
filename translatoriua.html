@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>Переводчик онлайн с русского на английский язык. Онлайн переводчик </title>
@@ -24,7 +24,7 @@
 
     <div class="trans_buttons">
         <div class="left_buttons">
-            <button class="translate_button">
+            <button class="translate_button" id="translate_button">
                 Перевести
             </button>
             <div class="textlang">
@@ -53,7 +53,7 @@
                     <option>польский</option>
                 </select>
             </div>
-            <a class="link_reverse">
+            <a href="#" class="link_reverse">
 
             </a>
         </div><div class="lecsic_type">
@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="text_output">
-            <div class="textfield_wrapper">
+            <div class="textfield_wrapper" id="textfield_wrapper">
                 <h2>Переведенный текст</h2>
                 <textarea class="text_output_field" id="text_output_field" rows="8"></textarea>
             </div>
@@ -229,6 +229,7 @@
         else{
             p.style.display="none";}
     }
+
 </script>
 </body>
 </html>
